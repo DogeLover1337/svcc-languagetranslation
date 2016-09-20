@@ -1,0 +1,14 @@
+---
+applications:
+- path: .
+  memory: 256M
+  instances: 1
+  name: svcc-lang
+  host: svcc-lang
+  disk_quota: 1024M
+  services:
+    - codechallenge-languageTranslation
+declared-services:
+  codechallenge-languageTranslation:
+    label: language_translation
+    plan: standard
